@@ -2,9 +2,16 @@
 
 集群管理工具
 
-## Install
+## 开发
 
-Create a virtualenv and activate it:
+生成安装依赖
+```
+pip freeze > requirement.txt
+```
+
+## 安装
+
+创建虚拟环境
 
 - python3 :
 ```
@@ -18,12 +25,12 @@ python2 -m virtualenv venv
 . venv/bin/activate
 ```
 
-Install Vicuna:
+安装
 ```
 pip install -e .
 ```
 
-## Run
+## 运行
 
 ```
 export FLASK_APP=vicuna
@@ -34,7 +41,7 @@ flask run
 
 Open http://127.0.0.1:5000 in a browser
 
-## Test
+## 测试
 
 ```
 pip install '.[test]'
