@@ -34,12 +34,10 @@ def create_app(test_config=None):
     from vicuna.auth.auth import init_login, init_admin, MyAdminIndexView, MyModelView, User
     init_login(app)
 
-    # from . import db
     db.init_app(app)
 
-    # from flask_login import LoginManager
-    # login_manager = LoginManager()
-    # login_manager.init_app(app)
+    from flask_babelex import Babel
+    babel = Babel(app)
 
     # Flask views
     @app.route('/')
