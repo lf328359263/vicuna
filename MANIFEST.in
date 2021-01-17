@@ -1,0 +1,6 @@
+include LICENSE
+include vicuna/schema.sql
+graft vicuna/static
+graft vicuna/templates
+graft tests
+global-exclude *.pyc
